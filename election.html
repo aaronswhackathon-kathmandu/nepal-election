@@ -1,0 +1,118 @@
+<!DOCTYPE html lang="en">
+<html>
+<head>
+<title>Nepal Election</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,300,600|Ubuntu:500,700|PT+Sans' rel='stylesheet' type='text/css' />
+<link href="style.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgAkI7Rv5Op02BvN_T-OJH5to9FnAZLM0&sensor=true"></script>
+
+</head>
+<body onclick="close(e);">
+<div id="top">Nepal Election</div>
+
+<div id="selection">
+Select your District
+<select id="district" onchange="District_change(this);">
+				<option value='--'>--Select One--</option>
+				<option value="Arghakhanchi">Arghakhanchi</option>
+				<option value="Baglung">Baglung</option>
+				<option value="Gulmi">Gulmi</option>
+				<option value="Palpa">Palpa</option>
+				<option value="Parbat">Parbat</option>
+				<option value="Rolpa">Rolpa</option>
+				<option value="Rupandehi">Rupandehi</option>
+				<option value="Syangja">Syangja</option>
+				<option value="Tanahu">Tanahu</option>
+				<option value="Achham">Achham</option>
+				<option value="Ilam">Ilam</option>
+				<option value="Udayapur">Udayapur</option>
+				<option value="Okhaldhunga">Okhaldhunga</option>
+				<option value="Kanchanpur">Kanchanpur</option>
+				<option value="Kapilbastu">Kapilbastu</option>
+				<option value="Kathmandu">Kathmandu</option>
+				<option value="Kavrepalanchok">Kavrepalanchok</option>
+				<option value="Kalikot">Kalikot</option>
+				<option value="Kaski">Kaski</option>
+				<option value="Kailali">Kailali</option>
+				<option value="Khotang">Khotang</option>
+				<option value="Gorkha">Gorkha</option>
+				<option value="Chitwan">Chitwan</option>
+				<option value="Jajarkot">Jajarkot</option>
+				<option value="Jumla">Jumla</option>
+				<option value="Jhapa">Jhapa</option>
+				<option value="Dadeldhura">Dadeldhura</option>
+				<option value="Doti">Doti</option>
+				<option value="Dolpa">Dolpa</option>
+				<option value="Taplejung">Taplejung</option>
+				<option value="Terhathum">Terhathum</option>
+				<option value="Dang">Dang</option>
+				<option value="Darchula">Darchula</option>
+				<option value="Dailekh">Dailekh</option>
+				<option value="Dolakha">Dolakha</option>
+				<option value="Dhankuta">Dhankuta</option>
+				<option value="Dhanusa">Dhanusa</option>
+				<option value="Dhading">Dhading</option>
+				<option value="Nawalparasi">Nawalparasi</option>
+				<option value="Nuwakot">Nuwakot</option>
+				<option value="Parsa">Parsa</option>
+				<option value="Panchthar">Panchthar</option>
+				<option value="Pyuthan">Pyuthan</option>
+				<option value="Bajhang">Bajhang</option>
+				<option value="Bardiya">Bardiya</option>
+				<option value="Banke">Banke</option>
+				<option value="Bajura">Bajura</option>
+				<option value="Bara">Bara</option>
+				<option value="Baitadi">Baitadi</option>
+				<option value="Bhaktapur">Bhaktapur</option>
+				<option value="Bhojpur">Bhojpur</option>
+				<option value="Makwanpur">Makwanpur</option>
+				<option value="Manang">Manang</option>
+				<option value="Mahottari">Mahottari</option>
+				<option value="Mugu">Mugu</option>
+				<option value="Mustang">Mustang</option>
+				<option value="Morang">Morang</option>
+				<option value="Myagdi">Myagdi</option>
+				<option value="Rasuwa">Rasuwa</option>
+				<option value="Ramechhap">Ramechhap</option>
+				<option value="Rukum">Rukum</option>
+				<option value="Rautahat">Rautahat</option>
+				<option value="Lamjung">Lamjung</option>
+				<option value="Lalitpur">Lalitpur</option>
+				<option value="Sankhuwasabha">Sankhuwasabha</option>
+				<option value="Saptari">Saptari</option>
+				<option value="Sarlahi">Sarlahi</option>
+				<option value="Salyan">Salyan</option>
+				<option value="Sindhupalchok">Sindhupalchok</option>
+				<option value="Sindhuli">Sindhuli</option>
+				<option value="Siraha">Siraha</option>
+				<option value="Sunsari">Sunsari</option>
+				<option value="Surkhet">Surkhet</option>
+				<option value="Solukhumbu">Solukhumbu</option>
+				<option value="Humla">Humla</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<span id="vdc" style="display:none;">
+	Select your municipality/VDC
+<select>
+	<option value="1">mun1</option>
+	<option value="2">mun2</option>
+</select></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+<span id="ward" style="display:none;">
+	Select your ward number
+<select>
+	<option value="1">1</option>
+	<option value="2">2</option>
+</select>
+</span>
+</div>
+<div id="info"></div>
+<div id="map_canvas" style="width:100%; height:400px;"></div>
+<div id="summary" style="display:none;"></div>
+<div id="independent" style="display:none;"></div>
+<div id="parties" style="display:none;"></div>
+<div id="candidates" style="display:none;"></div>
+<div id="modal" style="display:none;"></div>
+<script src="loadData.js"></script>
+</body>
+</html>

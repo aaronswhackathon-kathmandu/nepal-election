@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+#top {
+	text-align: center;
+	font-size: 32px;
+	color: white;
+	padding:30px;
+	background:#aa33f2;
+	font-family: "Ubuntu", "Trebuchet MS", sans-serif;
+
+}
+
+
+#selection{
+	padding:17px;
+	font-family: "PT Sans", "Verdana", sans-serif;
+}
+
+#info{
+	padding: 10px;
+	font-family: "Open Sans", "Trebuchet MS", sans-serif;
+}
+	
+ul{
+        background-color: #fff;
+        box-shadow: 0 0 6px #848484;
+        margin:0 auto;
+        width: 90%;
+}
+li {
+        display: block;
+        background-color: #fff;
+        list-style-type: none;
+        border-bottom: 1px solid #999;
+        margin-left: -40px;
+        padding:10px;
+        font-size: 18px;
+        padding-left: 30px;
+        transition:all .25s ease;
+        cursor: pointer;
+}
+li:hover{
+        background-color: #01a2e8;
+        color:#eee;
+}
+
+#modal {
+	position: fixed;
+	top:100px;
+	left:20%;
+	width:60%;
+	padding: 20px;
+	background:#01a2e8;
+	color:#eee; 
+	box-shadow: 0 0 6px #848484;
+	border-radius: 5px;
+}
